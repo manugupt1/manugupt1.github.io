@@ -1,0 +1,53 @@
+baseURL = "https://example.com/"
+languageCode = "en-us"
+title = "My Personal Blog"
+theme = "bear"
+
+# Enable RSS feeds
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+
+[params]
+  # The "description" of your website. This is used in the meta data of your generated html.
+  description = "My thoughts and ideas on various topics"
+  
+  # The path to your favicon
+  favicon = "images/favicon.png"
+  
+  # These will be used for OpenGraph, Twitter Cards and Schema.org
+  images = ["images/share.png"]
+  
+  # Metadata for author
+  author = "John Doe"
+  
+  # Used in the home page for the introduction
+  # This is the short intro text.
+  homeText = """
+  Hi there! I'm John Doe, a software developer and technology enthusiast with a passion for creating useful applications and exploring new ideas.
+  
+  I enjoy coding, hiking, and spending time with my family. Through this blog, I share my experiences, learnings, and thoughts on technology, productivity, and life in general.
+  
+  Feel free to reach out if you'd like to connect!
+  """
+  
+  # This is Bear theme specific config
+  hideMadeWithLine = false
+  
+  # Copyright notice displayed at the footer
+  copyright = "© 2023 John Doe. All rights reserved."
+  
+  # Social media links
+  [params.social]
+    twitter = "johndoe"
+    github = "johndoe"
+    linkedin = "johndoe"
+
+# Navigation menu
+[menu]
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 10
