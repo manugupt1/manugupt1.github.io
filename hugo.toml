@@ -51,3 +51,7 @@ theme = "bear"
     name = "Blog"
     url = "/blog/"
     weight = 10
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
